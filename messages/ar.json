@@ -1,0 +1,86 @@
+{
+  "LocaleSwitcher": {
+    "label": "تغيير اللغة",
+    "locale": "{locale, select, ar {العربية} en {الإنجليزية} other {غير معروف}}"
+  },
+  "navigation": {
+    "home": "الصفحة الرئيسية",
+    "about": "حول",
+    "cases": "الجرابات",
+    "straps": "الأحزمة",
+    "powerBanks": "الباور بانك",
+    "cables": "الأسلاك",
+    "magesafe": "ماج سيف",
+    "charger": "الشاحن",
+    "more": "المزيد"
+  },
+  "topbar": {
+    "sell_on_lohanza": "بيع على لوهانزا"
+  },
+  "csp": {
+    "cart": "السلة",
+    "shipping": "الشحن",
+    "payment": "الدفع",
+    "card": {
+      "new_customer": "زبون جديد؟ {link} للحصول على عروض أفضل",
+      "buttons": {
+        "shipping": "المتابعة للشحن",
+        "payment": "المتابعة للدفع",
+        "place_order": "تأكيد الطلب"
+      },
+      "discount": {
+        "title": "كود الخصم",
+        "placeholder": "أضف كود الخصم",
+        "apply": "تطبيق",
+        "remove": "إزالة"
+      },
+      "pricing": {
+        "title": "تفاصيل التسعير",
+        "items": "العناصر",
+        "discount": "الخصم",
+        "shipping": {
+          "title": "الشحن",
+          "details": "التفاصيل",
+          "free": "مجاني",
+          "cans": "يتم حسابه في الخطوة التالية"
+        },
+        "total": "الإجمالي"
+      }
+    }
+  },
+  "sections": {
+    "best_selling": "الأكثر مبيعًا",
+    "treanding_products": "المنتجات الرائجة",
+    "collections": "المجموعات",
+    "new_arrival": "وصل حديثًا",
+    "recently_viewed": "تمت مشاهدته مؤخرًا",
+    "featured_stores": "المتاجر المميزة",
+    "recommended_for_you": "مقترح لك"
+  },
+  "settings": {
+    "profile": "الملف الشخصي",
+    "orders": "الطلبات",
+    "favorites": "المفضلة",
+    "addresses": "العناوين",
+    "wallet": "محفظة لوهانزا",
+    "security": "الأمان",
+    "sign_out": "تسجيل الخروج"
+  },
+  "pages": {
+    "404": {
+      "head": "خطأ 404",
+      "title": "لا يمكننا العثور على تلك الصفحة",
+      "description": "عذرًا، الصفحة التي تبحث عنها غير موجودة أو تم نقلها",
+      "back_home": "العودة إلى الصفحة الرئيسية",
+      "back": "العودة"
+    },
+    "home": {
+      "title": "مرحبًا بك في NextJs i18n",
+      "description": "التعدد اللغوي في NextJs 13 App router"
+    },
+    "about": {
+      "title": "معلومات عنا",
+      "description": "هذه هي صفحة المعلومات"
+    }
+  }
+}

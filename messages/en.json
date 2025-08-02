@@ -1,0 +1,87 @@
+{
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {العربية} en {English} other {Unknown}}"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "cases": "Cases",
+    "straps": "Straps",
+    "powerBanks": "Power Banks",
+    "cables": "Cables",
+    "magesafe": "MageSage",
+    "charger": "Cahrger",
+    "more": "More"
+  },
+  "topbar": {
+    "sell_on_lohanza": "Sell on Lohanza"
+  },
+  "csp": {
+    "cart": "Cart",
+    "shipping": "shipping",
+    "payment": "payment",
+
+    "card": {
+      "new_customer": "New customer? {link} to get better offers",
+      "buttons": {
+        "shipping": "Continue to shipping",
+        "payment": "Continue to payment",
+        "place_order": "Place order"
+      },
+      "discount": {
+        "title": "Discount Code",
+        "placeholder": "Add discount code",
+        "apply": "Apply",
+        "remove": "Remove"
+      },
+      "pricing": {
+        "title": "Pricing Details",
+        "items": "Items",
+        "discount": "Discount",
+        "shipping": {
+          "title": "Shipping",
+          "details": "Details",
+          "free": "Free",
+          "cans": "Calculated at next step"
+        },
+        "total": "Total"
+      }
+    }
+  },
+  "sections": {
+    "best_selling": "Best Selling",
+    "treanding_products": "Treanding Products",
+    "collections": "Collections",
+    "new_arrival": "New Arrival",
+    "recently_viewed": "Recently Viewed",
+    "featured_stores": "Featured Stores",
+    "recommended_for_you": "Recommended for you"
+  },
+  "settings": {
+    "profile": "Profile",
+    "orders": "Orders",
+    "favorites": "Favorites",
+    "addresses": "Addresses",
+    "wallet": "Lohanza wallet",
+    "security": "Security",
+    "sign_out": "Sign out"
+  },
+  "pages": {
+    "404": {
+      "head": "error 404",
+      "title": "We can’t find that page",
+      "description": "Sorry, the page you are looking for doesn't exist or has been moved",
+      "back_home": "Back to home",
+      "back": "Go back"
+    },
+    "home": {
+      "title": "Welcome to NextJs i18n",
+      "description": "Internationalization in NextJs 13 App router"
+    },
+    "about": {
+      "title": "About Us",
+      "description": "This is the about page"
+    }
+  }
+}
