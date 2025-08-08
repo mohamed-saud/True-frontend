@@ -1,5 +1,12 @@
+import { cn } from '@/lib/utils';
 import React from 'react';
 
-export default function Heading({ children }: { children: React.ReactNode }) {
-  return <h2 className='font-medium text-4xl text-gray-900'>{children}</h2>;
+export default function Heading({
+  children,
+  size,
+}: {
+  children: React.ReactNode;
+  size: string;
+}) {
+  return <h2 className={cn('font-medium  text-gray-900', size)}>{children}</h2>;
 }

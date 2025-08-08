@@ -3,6 +3,7 @@ import BenefitsSection from '@/components/homepage/benefits/BenefitsSection';
 import HomeProductTab from '@/components/homepage/homeProductTabs/HomeProductTab';
 import HeroCategoriesSlider from '@/components/homepage/sliders/HeroCategoriesSlider';
 import ProductsCategoriesSlider from '@/components/homepage/sliders/ProductsCategoriesSlider-copy';
+import CategoriesBuner from '@/components/homepage/categoriesBauner/CategoriesBuner';
 import React from 'react';
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <ProductsCategoriesSlider />
       <HomeProductTab />
       <BenefitsSection />
+      <CategoriesBuner />
     </div>
   );
 }

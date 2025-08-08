@@ -39,10 +39,10 @@ export default function DesktopNavbar() {
       )}>
       <div className=' container flex items-center justify-center'>
         <div className='flex justify-between w-full items-center gap-6'>
-          <Link href='/'>
+          <div className='flex items-center gap-6'>
             <Logo />
-          </Link>
-          <Menu />
+            <Menu />
+          </div>
           <div className='flex gap-2 items-center '>
             <MyAccountButton />
             <Search />
