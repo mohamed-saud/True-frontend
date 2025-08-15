@@ -5,6 +5,7 @@ import HeroCategoriesSlider from '@/components/homepage/sliders/HeroCategoriesSl
 import ProductsCategoriesSlider from '@/components/homepage/sliders/ProductsCategoriesSlider-copy';
 import CategoriesBuner from '@/components/homepage/categoriesBauner/CategoriesBuner';
 import React from 'react';
+import MostPopularProduct from '@/components/homepage/mostPopularProduct/MostPopularProduct';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <HomeProductTab />
       <BenefitsSection />
       <CategoriesBuner />
+      <MostPopularProduct />
     </div>
   );
 }

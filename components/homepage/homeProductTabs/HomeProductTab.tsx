@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import ListProduct from './ListProduct';
+import ListProduct from '../../product/ListProduct';
 import Heading from '@/components/ui/Heading';
 import Title from '@/components/ui/Title';
 import SubTitle from '@/components/ui/SubTitle';
