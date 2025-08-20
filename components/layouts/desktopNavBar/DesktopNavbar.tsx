@@ -1,12 +1,11 @@
 'use client';
-import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
-import Logo from './Logo';
+import Logo from '../Logo';
 import { Menu } from './Menu';
 import MyAccountButton from './MyAccountButton';
 import Search from './Search';
 import WishButton from './WishButton';
-import Cart from './Cart';
+import Cart from '../Cart';
 import LocaleSwitcher from './LocaleSwitcher';
 import { cn } from '@/lib/utils';
 
@@ -16,7 +15,7 @@ export default function DesktopNavbar() {
   useEffect(() => {
     let lastScrollY = window.screenY;
     const controleScroll = () => {
-      let currentScrollY = window.scrollY;
+      const currentScrollY = window.scrollY;
       if (lastScrollY > currentScrollY && currentScrollY > 200) {
         setIsvisbile(true);
       } else {

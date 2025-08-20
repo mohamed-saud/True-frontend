@@ -1,4 +1,4 @@
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/buttons/button';
 import Heading from '@/components/ui/Heading';
 import SubTitle from '@/components/ui/SubTitle';
 import Title from '@/components/ui/Title';

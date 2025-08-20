@@ -18,7 +18,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import { Button } from '../../ui/button';
+import { Button } from '../../ui/buttons/button';
 export default function HeroCategoriesSlider() {
   return (
     <div className='relative w-full max-w-full bg-gray-100 '>
