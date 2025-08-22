@@ -38,14 +38,10 @@ const data = [
     imageUrl: '/products/blue-case-back.jpg',
   },
 ];
-export default function ListProduct({
-  categoryName,
-}: {
-  categoryName: string;
-}) {
+export default function ListProduct() {
   /// fetchdata category from the server a
   return (
-    <ul className='grid justify-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-5 w-full'>
+    <ul className='grid justify-center items-center grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  gap-2 w-full'>
       {data.map((product) => (
         <Product
           key={product.id}

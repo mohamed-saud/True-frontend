@@ -5,7 +5,7 @@ export default function MyAccountButton() {
   return (
     <Link
       href=''
-      className=' cursor-pointer p-2 text-nowrap text-xs'>
+      className=' cursor-pointer  text-nowrap text-xs'>
       Log in / Register
     </Link>
   );

@@ -22,9 +22,11 @@ export default function Product({ product }: { product: any }) {
               src={product.imageUrl}
             />
           </CardHeader>
-          <CardContent className='gap-2.5 grid text-center'>
-            <CardTitle>{product.productName}</CardTitle>
-            <CardDescription>{product.phone}</CardDescription>
+          <CardContent className='gap-1 xl:gap-2.5 grid text-center'>
+            <CardTitle className='text-sm'>{product.productName}</CardTitle>
+            <CardDescription className='text-xs text-gray-500 xl:text-xl'>
+              {product.phone}
+            </CardDescription>
             <p className='text-blue-500'> ${product.price.toLocaleString()}</p>
           </CardContent>
         </Card>

@@ -90,9 +90,9 @@ export default function ProductsCategoriesSlider() {
         // scrollbar={{ draggable: true }}
       >
         {categorProduct.map(({ title, imageUrl, coutn, catUrl }) => (
-          <SwiperSlide>
+          <SwiperSlide key={catUrl}>
             <Link href={catUrl}>
-              <div className='flex justify-center flex-col items-center gap-3'>
+              <div className='flex justify-center flex-col items-center gap-3 mb-10'>
                 <Avatar className='w-[150px]  rounded-full overflow-hidden  '>
                   <AvatarImage
                     width='100%'

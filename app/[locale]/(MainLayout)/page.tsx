@@ -9,7 +9,7 @@ import MostPopularProduct from '@/components/homepage/mostPopularProduct/MostPop
 
 export default function Home() {
   return (
-    <div className='flex flex-col gap-y-30 mb-30'>
+    <div className='flex flex-col gap-y-10 xl:gap-y-30 mb-30'>
       <HeroCategoriesSlider />
       <ProductsCategoriesSlider />
       <HomeProductTab />

@@ -3,13 +3,7 @@
 import React from 'react';
 // Import Swiper React components
 // import Swiper core and required modules
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
@@ -23,7 +17,7 @@ export default function HeroCategoriesSlider() {
   return (
     <div className='relative w-full max-w-full bg-gray-100 '>
       <Swiper
-        className='h-[700px]'
+        className='h-[450px] xl:h-[700px]'
         // install Swiper modules
         modules={[Navigation, Pagination, Scrollbar, Autoplay]}
         spaceBetween={50}
@@ -39,17 +33,16 @@ export default function HeroCategoriesSlider() {
         // scrollbar={{ draggable: true }}
       >
         <SwiperSlide
+          className='bg-cover bg-no-repeat bg-center'
           style={{
             backgroundImage: 'url(/sliderImages/w-accessories-slider.jpg)',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center center',
           }}>
           <div className=' container  w-full h-full m-auto flex items-center'>
-            <div className='flex flex-col gap-10 max-w-xl animate-slide-up'>
-              <h1 className='text-gray-900 text-8xl subpixel-antialiased'>
+            <div className='flex flex-col gap-4 xl:gap-10 max-w-[300px] xl:max-w-xl animate-slide-up p-4 xl:p-0'>
+              <h1 className='text-gray-900 font-semibold text-4xl xl:text-7xl subpixel-antialiased'>
                 Charge Your Phone Safely!
               </h1>
-              <p className='text-gray-500 '>
+              <p className='text-gray-500 hidden xl:block'>
                 A wonderful serenity has taken possession of my entire soul,
                 like these sweet mornings of spring which I enjoy with my whole
                 heart.
@@ -58,13 +51,13 @@ export default function HeroCategoriesSlider() {
                 <Button
                   variant='secondary'
                   size='lg'
-                  className=' capitalize bg-blue-400 text-white '>
+                  className=' uppercase font-semibold bg-blue-400 text-white '>
                   to shop
                 </Button>
                 <Button
                   variant='outline'
                   size='lg'
-                  className=' capitalize bg-gray-100 text-gray-800'>
+                  className=' hidden xl:flex capitalize bg-gray-100 text-gray-800'>
                   read more
                 </Button>
               </div>
@@ -72,18 +65,16 @@ export default function HeroCategoriesSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide
+          className='bg-cover bg-no-repeat bg-center'
           style={{
             backgroundImage: 'url(/sliderImages/accessories-slide-2.jpg)',
-            height: 'full',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
           }}>
           <div className=' container  w-full h-full m-auto flex items-center'>
-            <div className='flex flex-col gap-10 max-w-2xl animate-slide-up'>
-              <h1 className='text-gray-900 text-8xl subpixel-antialiased'>
+            <div className='flex flex-col gap-4 xl:gap-10 max-w-[300px] xl:max-w-xl animate-slide-up p-4 xl:p-0'>
+              <h1 className='text-gray-900 font-semibold text-4xl xl:text-7xl subpixel-antialiased'>
                 For Everything and Everyone
               </h1>
-              <p className='text-gray-500 '>
+              <p className='text-gray-500 hidden xl:block'>
                 Even if your less into design and more into content strategy you
                 may find some redeeming value with, wait for it, dummy copy.
               </p>
@@ -97,7 +88,7 @@ export default function HeroCategoriesSlider() {
                 <Button
                   variant='outline'
                   size='lg'
-                  className=' capitalize bg-gray-100 text-gray-800'>
+                  className=' hidden xl:flex capitalize bg-gray-100 text-gray-800'>
                   read more
                 </Button>
               </div>
@@ -105,18 +96,16 @@ export default function HeroCategoriesSlider() {
           </div>
         </SwiperSlide>
         <SwiperSlide
+          className='bg-cover bg-no-repeat bg-center'
           style={{
             backgroundImage: 'url(/sliderImages/accessories-slide-3.jpg)',
-            height: 'full',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center right',
           }}>
           <div className=' container  w-full h-full m-auto flex items-center'>
-            <div className='flex flex-col gap-10 max-w-xl animate-slide-up'>
-              <h1 className='text-gray-900 text-8xl subpixel-antialiased'>
-                Featured Accessories{' '}
+            <div className='flex flex-col gap-4 xl:gap-10 max-w-[300px] xl:max-w-xl animate-slide-up p-4 xl:p-0'>
+              <h1 className='text-gray-900 font-semibold text-4xl xl:text-7xl subpixel-antialiased'>
+                Featured Accessories
               </h1>
-              <p className='text-gray-500 '>
+              <p className='text-gray-500 hidden xl:block'>
                 A client that’s unhappy for a reason is a problem, a client
                 that’s unhappy though required he or her can’t quite put a
                 finger.
@@ -131,7 +120,7 @@ export default function HeroCategoriesSlider() {
                 <Button
                   variant='outline'
                   size='lg'
-                  className=' capitalize bg-gray-100 text-gray-800'>
+                  className=' hidden xl:flex capitalize bg-gray-100 text-gray-800'>
                   read more
                 </Button>
               </div>

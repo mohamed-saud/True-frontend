@@ -154,3 +154,8 @@
     opacity: 100%;
   }
 }
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 20px !important;
+  color: black !important;
+}

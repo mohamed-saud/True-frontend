@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import Logo from '../Logo';
 import { Menu } from './Menu';
 import MyAccountButton from './MyAccountButton';
-import Search from './Search';
-import WishButton from './WishButton';
+import Search from '../Search';
+import WishButton from '../WishButton';
 import Cart from '../Cart';
 import LocaleSwitcher from './LocaleSwitcher';
 import { cn } from '@/lib/utils';
@@ -42,7 +42,7 @@ export default function DesktopNavbar() {
             <Logo />
             <Menu />
           </div>
-          <div className='flex gap-2 items-center '>
+          <div className='flex gap-4 items-center '>
             <MyAccountButton />
             <Search />
             <WishButton />
