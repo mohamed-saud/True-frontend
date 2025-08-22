@@ -36,17 +36,17 @@ export default function HomeProductTab() {
           <TabsContent
             className=' w-full'
             value='cases'>
-            <ListProduct categoryName='case' />
+            <ListProduct />
           </TabsContent>
           <TabsContent
             className=' w-full'
             value='straps'>
-            <ListProduct categoryName='straps' />
+            <ListProduct />
           </TabsContent>
           <TabsContent
             className=' w-full'
             value='magsafe'>
-            <ListProduct categoryName='magsafe' />
+            <ListProduct />
           </TabsContent>
         </Tabs>
       </div>
