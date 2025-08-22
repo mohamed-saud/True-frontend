@@ -13,7 +13,7 @@ export default function MostPopularProduct() {
         Proponents of content strategy may shun of dummy copy designers
       </SubTitle>
       <div>
-        <ListProduct categoryName='' />
+        <ListProduct />
       </div>
     </div>
   );

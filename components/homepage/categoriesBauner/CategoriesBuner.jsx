@@ -7,7 +7,7 @@ import image4 from '@/assets/accessories-banner-4.jpg';
 function CategoriesBuner() {
   return (
     <div className=' container m-auto gap-4 grid'>
-      <div className='grid gap-4  grid-cols-[40%_1fr]'>
+      <div className='grid gap-4 grid-cols-1  xl:grid-cols-[40%_1fr]'>
         <Category
           image={image1}
           imageWidth={485}
@@ -25,7 +25,7 @@ function CategoriesBuner() {
           link='/'
         />
       </div>
-      <div className='grid gap-4  grid-cols-[1fr_40%]'>
+      <div className='grid gap-4 grid-cols-1  xl:grid-cols-[40%_1fr]'>
         <Category
           image={image3}
           imageWidth={680}

@@ -17,14 +17,14 @@ const DivContainer = styled.div`
 `;
 export default function BenefitsSection() {
   return (
-    <div className=' container m-auto w-full flex justify-center flex-col items-center gap-8'>
+    <div className=' container m-auto w-full flex justify-center flex-col items-center gap-5 xl:gap-8 text-center '>
       <Title>There are some redeeming factors</Title>
-      <Heading size='text-4xl'>We Provide High Quality Goods</Heading>
-      <SubTitle>
-        A client that's unhappy for a reason is a problem, a client that's
-        unhappy though he or her can't
+      <Heading clalassName='text-xl'>We Provide High Quality Goods</Heading>
+      <SubTitle className='max-w-2xl'>
+        A client that&apos;s unhappy for a reason is a problem, a client
+        that&apos;s unhappy though he or her can&apos;t
       </SubTitle>
-      <div className='flex gap-10 items-center justify-center'>
+      <div className='flex flex-col xl:flex-row gap-5 xl:gap-10 items-center justify-center'>
         <DivContainer>
           <Truck className=' text-blue-400 w-[50px] h-[50px]  ' />
           <Heading size='text-3xl'>Fast Delivery</Heading>
@@ -37,8 +37,8 @@ export default function BenefitsSection() {
           <ThumbsUp className=' text-blue-400 w-[50px] h-[50px]' />
           <Heading size='text-3xl'>Best Qualit</Heading>
           <SubTitle>
-            It's content strategy gone awry right from the start. Forswearing
-            the use of Lorem Ipsum.
+            It&apos;s content strategy gone awry right from the start.
+            Forswearing the use of Lorem Ipsum.
           </SubTitle>
         </DivContainer>
         <DivContainer>

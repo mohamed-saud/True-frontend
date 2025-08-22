@@ -9,7 +9,16 @@ import {
 } from '@/components/ui/card';
 import Image from 'next/image';
 
-export default function Product({ product }: { product: any }) {
+interface ProductProps {
+  product: {
+    imageUrl: string;
+    productName: string;
+    phone: string;
+    price: number;
+  };
+}
+
+export default function Product({ product }: ProductProps) {
   return (
     <li className=''>
       <Link href=''>
