@@ -34,7 +34,7 @@ export default async function LocaleLayout({
     notFound();
   }
 
-  const direction = useTextDirection(locale);
+  const direction = await useTextDirection(locale);
 
   return (
     <html
