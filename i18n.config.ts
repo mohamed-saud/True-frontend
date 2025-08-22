@@ -8,7 +8,11 @@ export const i18n = {
 
 export type Locale = ( typeof i18n )[ "locales" ][ number ];
 
-export default getRequestConfig( async ( { locale } ) => ( {
-    messages: ( await import( `./dictionaries/${ locale.split( "-" )[ 1 ] }.json` ) )
-        .default,
-} ) );
+export default getRequestConfig( async ( { locale } ) => {
+    const currentLocale = locale ?? i18n.defaultLocale;
+    const langCode = currentLocale.split( "-" )[ 1 ];
+    return {
+        locale: currentLocale,
+        messages: ( await import( `./dictionaries/${ langCode }.json` ) ).default,
+    };
+} );

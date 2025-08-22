@@ -4,7 +4,8 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import useTextDirection from '@/hooks/useTextDirection';
+// import useTextDirection from '@/hooks/useTextDirection';
+import getTextDirection from '@/utils/getTextDirection';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -33,8 +34,7 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-
-  const direction = await useTextDirection(locale);
+  const direction = getTextDirection(locale);
 
   return (
     <html

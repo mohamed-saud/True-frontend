@@ -16,8 +16,8 @@ export default function BenefitsItem() {
         <ThumbsUp />
         <h1>Best Qualit</h1>
         <p>
-          It's content strategy gone awry right from the start. Forswearing the
-          use of Lorem Ipsum.
+          It&apos;s content strategy gone awry right from the start. Forswearing
+          the use of Lorem Ipsum.
         </p>
       </div>
       <div>

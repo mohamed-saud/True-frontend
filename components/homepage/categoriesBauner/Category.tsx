@@ -1,8 +1,6 @@
 import { Button } from '@/components/ui/buttons/button';
 import Heading from '@/components/ui/Heading';
-import SubTitle from '@/components/ui/SubTitle';
 import Title from '@/components/ui/Title';
-import { cn } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';

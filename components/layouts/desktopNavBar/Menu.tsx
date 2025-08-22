@@ -2,7 +2,6 @@
 
 import * as React from 'react';
 import Link from 'next/link';
-import { CircleCheckIcon, CircleHelpIcon, CircleIcon } from 'lucide-react';
 
 import {
   NavigationMenu,
@@ -11,7 +10,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
 } from '@/components/ui/navigation-menu';
 import ListMenuItem from './ListMenuItem';
 import { useLocale, useTranslations } from 'next-intl';
@@ -21,10 +19,7 @@ interface Cases {
   title: string;
   href: string;
 }
-interface Strap {
-  title: string;
-  href: string;
-}
+
 const cases: Cases[] = [
   {
     title: 'iPhone11',
@@ -44,24 +39,6 @@ const cases: Cases[] = [
   },
 ];
 
-const strap: Strap[] = [
-  {
-    title: 'canvas',
-    href: '/1',
-  },
-  {
-    title: 'canvas',
-    href: '2',
-  },
-  {
-    title: 'canvas',
-    href: '2',
-  },
-  {
-    title: 'canvas',
-    href: '2',
-  },
-];
 export function Menu() {
   const t = useTranslations('navigation');
   const locale = useLocale();
@@ -83,8 +60,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className={cn('grid w-[150px] gap-4 p-1.5 ')}>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -95,8 +75,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -107,8 +90,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -119,8 +105,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -131,8 +120,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -143,8 +135,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -155,8 +150,11 @@ export function Menu() {
             </NavigationMenuTrigger>
             <NavigationMenuContent>
               <ul className='grid w-[150px] gap-4 p-1.5'>
-                {cases.map((cas) => (
-                  <ListMenuItem title={cas.title} />
+                {cases.map((cas, idx) => (
+                  <ListMenuItem
+                    key={cas.href + idx}
+                    title={cas.title}
+                  />
                 ))}
               </ul>
             </NavigationMenuContent>
@@ -167,22 +165,22 @@ export function Menu() {
   );
 }
 
-function ListItem({
-  title,
-  children,
-  href,
-  ...props
-}: React.ComponentPropsWithoutRef<'li'> & { href: string }) {
-  return (
-    <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className='text-sm leading-none font-medium'>{title}</div>
-          <p className='text-muted-foreground line-clamp-2 text-sm leading-snug'>
-            {children}
-          </p>
-        </Link>
-      </NavigationMenuLink>
-    </li>
-  );
-}
+// function ListItem({
+//   title,
+//   children,
+//   href,
+//   ...props
+// }: React.ComponentPropsWithoutRef<'li'> & { href: string }) {
+//   return (
+//     <li {...props}>
+//       <NavigationMenuLink asChild>
+//         <Link href={href}>
+//           <div className='text-sm leading-none font-medium'>{title}</div>
+//           <p className='text-muted-foreground line-clamp-2 text-sm leading-snug'>
+//             {children}
+//           </p>
+//         </Link>
+//       </NavigationMenuLink>
+//     </li>
+//   );
+// }
