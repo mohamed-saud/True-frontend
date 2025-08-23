@@ -34,12 +34,11 @@ export default async function LocaleLayout({
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
-  const direction = getTextDirection(locale);
-
+  const dir = await getTextDirection(locale); // getTextDirection(locale); --- IGNORE ---
   return (
     <html
       lang={locale}
-      dir={direction}>
+      dir={dir}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider>{children}</NextIntlClientProvider>

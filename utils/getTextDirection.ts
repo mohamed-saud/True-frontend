@@ -1,5 +1,6 @@
-export default function getTextDirection( locale: string ): 'ltr' | 'rtl' {
-    // Add more RTL locales as needed
-    const rtlLocales = [ 'ar', 'en' ];
-    return rtlLocales.includes( locale ) ? 'rtl' : 'ltr';
+
+export default async function getTextDirection( locale?: string ) {
+
+    const langCode = locale === "ar" ? "rtl" : "ltr";
+    return langCode
 }
